@@ -160,7 +160,7 @@ body {
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000, endColorstr=#B2000000)";
 }
 
-#introtext .head-sarah {
+#introtext .head-bride {
     font-family: "EdwardianScrAltITCTT", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 5em;
     line-height: 100%;
@@ -171,10 +171,11 @@ body {
     margin-left: -10px;
     font-size: 0.7em;
 }
-#introtext .head-brad {
+#introtext .head-groom {
     font-family: "futura_ltbook", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 2em;
     line-height: 100%;
+    text-transform: uppercase;
 }
 #introtext .date {
     margin-top: 10px;
@@ -257,19 +258,19 @@ body {
 }
 
 #bg-image {
-    position: fixed; 
-    top: -50%; 
-    left: -50%; 
-    width: 200%; 
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
     height: 200%;
 }
 #bg-image img {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
-    margin: auto; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     min-width: 50%;
     min-height: 50%;
 }
@@ -351,7 +352,7 @@ section h2 {
     .header-container.sticky {
         position: fixed;
         top: 15px;
-        
+
         animation:thedrop 1s 1;
         -moz-animation:thedrop 1s 1;
         -webkit-animation:thedrop 1s 1;
@@ -361,7 +362,7 @@ section h2 {
         padding: 30px 0 30px 0;
     }
 
-    #introtext .head-sarah {
+    #introtext .head-bride {
         font-size: 7em;
     }
     #introtext .amp {
@@ -370,8 +371,9 @@ section h2 {
         font-size: 0.9em;
         margin-left: -20px;
     }
-    #introtext .head-brad {
+    #introtext .head-groom {
         font-size: 3em;
+        text-transform: uppercase;
     }
     #introtext .date {
         font-size: 1.1em;
@@ -472,15 +474,16 @@ section h2 {
     WIDE: Menu
    ============ */
 
-    #introtext .head-sarah {
+    #introtext .head-bride {
         font-size: 9em;
    }
     #introtext .amp {
         top: 0;
         font-size: 1em;
     }
-    #introtext .head-brad {
+    #introtext .head-groom {
         font-size: 4em;
+        text-transform: uppercase;
     }
     #introtext .date {
         font-size: 2em;
@@ -527,7 +530,7 @@ section h2 {
         font-size: 1.4em;
         line-height: 145%;
         padding: 0 20px;
-    }  
+    }
 
 }
 
@@ -548,15 +551,16 @@ section h2 {
         margin: 0 auto;
     }
 
-    #introtext .head-sarah {
+    #introtext .head-bride {
         font-size: 11em;
     }
     #introtext .amp {
         top: 0;
         font-size: 1.1em;
     }
-    #introtext .head-brad {
+    #introtext .head-groom {
         font-size: 5em;
+        text-transform: uppercase;
     }
     #introtext .date {
 
@@ -564,7 +568,6 @@ section h2 {
         margin-top: 15px;
         margin-bottom: 20px;
     }
-
     .main header {
         margin-top: 4%;
         margin-bottom: 30%;
@@ -572,7 +575,7 @@ section h2 {
         width: 100%;
     }
 
-  
+
 }
 
 /* ==========================================================================
