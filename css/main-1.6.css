@@ -120,8 +120,6 @@ body {
    =================== */
 
 .header-container {
-    position:absolute;
-    bottom:20px;
     width: 100%;
     background: black;
     z-index: 10;
@@ -134,14 +132,12 @@ body {
     /* For IE 8*/
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000, endColorstr=#CC000000)";
 }
-
 .title {
     color: black;
 }
 #introtext {
     display: block;
     padding: 10px 0 10px 0;
-    margin-bottom: 300px;
     background: black;
 
     -ms-border-radius: 8px;
@@ -237,7 +233,7 @@ nav ul li a::-moz-focus-inner {border:0;}
 .main {
     padding: 5% 0;
 }
-.main header {
+.main #header {
     float: left;
     width: 80%;
 }
@@ -275,16 +271,11 @@ body {
     min-height: 50%;
 }
 
-#bg-container {
-
-}
-
-section {
+.content {
     text-align: left;
     padding: 25px;
     background-color: black;
     height: 100%;
-    margin-top: 200px;
     color: white;
 
     -ms-border-radius: 8px;
@@ -303,13 +294,11 @@ section {
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000, endColorstr=#B2000000)";
 }
 
-section h1 {
-
+.content h1 {
     font-family: "EdwardianScrAltITCTT", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 2.6em;
-
 }
-section h2 {
+.content h2 {
     font-size: 1.1em;
     line-height: 120%;
     padding: 0 0px;
@@ -341,21 +330,11 @@ section h2 {
         background-position: 50% 20%;
     }
 
-    /** get the transparent bar on the bottom **/
     .header-container {
-        position:absolute;
-        bottom:20px;
-        width:100%;
+        position: relative;
+        margin-top: 15px;
         line-height:12px;
-    }
-
-    .header-container.sticky {
-        position: fixed;
-        top: 15px;
-
-        animation:thedrop 1s 1;
-        -moz-animation:thedrop 1s 1;
-        -webkit-animation:thedrop 1s 1;
+        width:100%;
     }
 
     #introtext {
@@ -416,20 +395,20 @@ section h2 {
         transition: all .3s ease;
     }
 
-    .main header {
+    .main #header {
         margin-top: 10%;
         float: left;
         width: 40%;
         min-width: 320px;
     }
 
-    section {
+    .content {
         padding: 40px 40px 70px 40px;
     }
-    section h1 {
+    .content h1 {
         font-size: 3.1em;
     }
-    section h2 {
+    .content h2 {
         font-size: 1.7em;
     }
 
@@ -463,10 +442,10 @@ section h2 {
     WIDE: CSS3 Effects
    ==================== */
 
-    section h1 {
+    .content h1 {
         font-size: 4.9em;
     }
-    section h2 {
+    .content h2 {
         font-size: 2.0em;
     }
 
@@ -495,9 +474,8 @@ section h2 {
     WIDE: Main
    ============ */
 
-    .main header {
+    .main #header {
         margin-top: 10%;
-        margin-bottom: 30%;
         float: left;
         width: 100%;
     }
@@ -509,12 +487,13 @@ section h2 {
 }
 @media only screen and (min-width: 900px) {
 
-    section h1,
-    section h2 {
+    .content h1,
+    .content h2 {
         padding: 0 20px;
     }
-    section h1 {
+    .content h1 {
         font-size: 5.9em;
+        text-align: center;
     }
 
     .column.full {
@@ -568,9 +547,8 @@ section h2 {
         margin-top: 15px;
         margin-bottom: 20px;
     }
-    .main header {
+    .main #header {
         margin-top: 4%;
-        margin-bottom: 30%;
         float: left;
         width: 100%;
     }
@@ -598,31 +576,6 @@ section h2 {
 
 .hidden {
     display: none !important;
-    visibility: hidden;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
     visibility: hidden;
 }
 
@@ -784,25 +737,25 @@ section h2 {
 }
 
 @font-face {
-        font-family: 'EdwardianScrAltITCTT';
-        src: url('edwasai.eot');
-        src: url('edwasai.eot?#iefix') format('embedded-opentype'),
-                 url('edwasai.woff') format('woff'),
-                 url('edwasai.ttf') format('truetype'),
-                 url('edwasai.svg#edwasai') format('svg');
-        font-weight: normal;
-        font-style: normal;
+    font-family: 'EdwardianScrAltITCTT';
+    src: url('edwasai.eot');
+    src: url('edwasai.eot?#iefix') format('embedded-opentype'),
+         url('edwasai.woff') format('woff'),
+         url('edwasai.ttf') format('truetype'),
+         url('edwasai.svg#edwasai') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-        font-family: 'EdwardianScrAltITCTTBold';
-        src: url('edwasaib.eot');
-        src: url('edwasaib.eot?#iefix') format('embedded-opentype'),
-                 url('edwasaib.woff') format('woff'),
-                 url('edwasaib.ttf') format('truetype'),
-                 url('edwasaib.svg#edwasaib') format('svg');
-        font-weight: normal;
-        font-style: normal;
+    font-family: 'EdwardianScrAltITCTTBold';
+    src: url('edwasaib.eot');
+    src: url('edwasaib.eot?#iefix') format('embedded-opentype'),
+         url('edwasaib.woff') format('woff'),
+         url('edwasaib.ttf') format('truetype'),
+         url('edwasaib.svg#edwasaib') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .responsive-image.proposal {
@@ -857,7 +810,6 @@ a.email {
 }
 
 .thumb {
-
     height: 80px;
     width: 80px;
     background-color: black;
