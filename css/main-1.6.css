@@ -119,7 +119,7 @@ body {
     Theme
    =================== */
 
-.header-container {
+.nav-container {
     width: 100%;
     background: black;
     z-index: 10;
@@ -231,7 +231,7 @@ nav ul li a::-moz-focus-inner {border:0;}
    ============== */
 
 .main {
-    padding: 5% 0;
+    padding: 4% 0;
 }
 .main #header {
     float: left;
@@ -330,11 +330,20 @@ body {
         background-position: 50% 20%;
     }
 
-    .header-container {
+    .start-container .nav-container {
         position: relative;
         margin-top: 15px;
-        line-height:12px;
         width:100%;
+    }
+
+    .abs-container .nav-container {
+        position: absolute;
+        bottom: 20px;
+    }
+
+    .finish-container .nav-container {
+        position: relative;
+        margin-bottom: 20px;
     }
 
     #introtext {
@@ -542,13 +551,12 @@ body {
         text-transform: uppercase;
     }
     #introtext .date {
-
         font-size: 2.5em;
-        margin-top: 15px;
+        margin-top: 35px;
         margin-bottom: 20px;
     }
     .main #header {
-        margin-top: 4%;
+        margin-top: 2%;
         float: left;
         width: 100%;
     }
