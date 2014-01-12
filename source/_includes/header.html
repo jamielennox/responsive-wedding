@@ -13,23 +13,25 @@
             <title>{{ site.title }}</title>
         {% endif %}
 
-        <meta name="description" content="Welcome to the wedding website for Sarah and Brad's Big Day!">
+        {% if page.description %}
+            <meta name="description" content="{{site.description}}">
+        {% else %}
+            <meta name="description" content="Welcome to the wedding website for {{site.bride}} and {{site.groom}}'s Big Day!">
+        {% endif %}
 
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
         <!-- For iPhone 4 with high-resolution Retina display: -->
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{site.root}}apple-touch/apple-touch-icon-114x114-precomposed.png">
         <!-- For first-generation iPad: -->
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{site.root}}apple-touch/apple-touch-icon-72x72-precomposed.png">
         <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-        <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="{{site.root}}apple-touch/apple-touch-icon-precomposed.png">
 
-        <link rel="shortcut icon" href="favicon.ico?v=1">
+        <link rel="shortcut icon" href="{{site.root}}favicon.ico">
 
-        <link rel="stylesheet" href="/css/normalize.min.css">
-        <link rel="stylesheet" href="/css/main-1.6.css">
-
-        <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <link rel="stylesheet" href="{{site.root}}stylesheets/normalize.min.css">
+        <link rel="stylesheet" href="{{site.root}}stylesheets/main-1.6.css">
         {{ page.head }}
     </head>
     <body>
@@ -51,7 +53,7 @@ http://scal.io -- check us out.
 ****************************************************************************************************-->
 
         <div id="bg-image">
-            <img src="/img/bg-pic.jpg" alt="bg" />
+            <img src="{{site.root}}images/bg-pic.jpg" alt="bg" />
         </div>
 
         <div id="bg-container">

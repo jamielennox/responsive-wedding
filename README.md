@@ -1,7 +1,9 @@
 responsive-wedding
 ------------------
 
-An HTML5 responsive design using jquery waypoints & scroll-to for a pleasant single-page navigation. This template makes use of media queries and scales well for all mobile form-factors.
+This is an Octopress customization of a basic responsive theme originally designed for wedding websites. It was initially created by [Bradley Greenwood](http://github.com/bmgdev/responsive-wedding).
+
+Since that time all of the javascript and some of the flashy CSS has been stripped out (it's not my thing).
 
 A live demo can be viewed at:
 
@@ -9,7 +11,7 @@ A live demo can be viewed at:
 
 ========
 
-![Preview](https://github.com/bmgdev/responsive-wedding/blob/master/preview.png?raw=true)
+![Preview](blob/master/preview.png?raw=true)
 
 ## LICENSE
 
